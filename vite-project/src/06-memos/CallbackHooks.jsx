@@ -4,8 +4,8 @@ import { ShowIncrement } from "./ShowIncrement";
 export const CallbackHook = ()=>{
 const [counter, setCounter] = useState(10);
 
- const incrementFather= useCallback(()=>{
- setCounter((value)=>value + 1)
+ const incrementFather= useCallback((value)=>{ //ese value pasa a showincrement como callback
+ setCounter((count)=>count + value)
 },[])
 
 //solo cuando la funcion cambie3 disparar ese efecto
