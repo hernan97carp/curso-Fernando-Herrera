@@ -7,12 +7,14 @@ const initialState = [{
 }];
 
 
-const todoReducer = ( state = initialState, action = {} ) => {
 
+
+const todoReducer = ( state = initialState, action = {} ) => {
+//crear un nuevo estado
     if ( action.type === '[TODO] add todo' ){
         return [ ...state, action.payload ];
     }
-
+//nunca mutar un estado
     return state;
 }
 
@@ -35,8 +37,3 @@ todos = todoReducer( todos, addTodoAction );
 
 
 console.log({state: todos})
-
-
-
-
-

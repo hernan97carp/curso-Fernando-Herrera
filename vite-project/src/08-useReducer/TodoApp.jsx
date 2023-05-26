@@ -1,6 +1,6 @@
 import { useTodos } from '../hooks';
 import { TodoAdd } from './TodoAdd';
-import { TodoList } from './TodoList';
+import { TodoList } from './Todolist';
 
 
 export const TodoApp = () => {
@@ -36,3 +36,43 @@ export const TodoApp = () => {
         </>
     )
 }
+
+
+// import { useReducer } from "react"
+// import { todoReducer } from "./todoReducer"
+// const initialState= [
+// {
+// id: new Date().getTime(),
+// description: "recolectar agua",
+// done:false,
+
+// },
+
+// {
+//     id: new Date().getTime() * 3,
+//     description: "recolectar piedra",
+//     done:false,
+
+// }
+
+// ]
+// console.log(initialState)
+// export const TodoApp = () =>{
+// //todo reducer no lo ejecutamos  ...para q use reducer lo use cuando lo indique el
+//  //en vez de state le podemos decir q es un todo
+//  // en vez de dispatch llamar dispatchTodo
+// const [todo ,dispatch] = useReducer(todoReducer, initialState)
+
+
+//     return(
+//         <>
+       
+//             <h1>Todo app</h1>
+//               <ul>
+//             <li>item 1</li>
+//             <li>item 2</li>
+//             <li>item 3</li>
+//             </ul>
+//         </>
+//     )
+// }
